@@ -1,0 +1,121 @@
+@import "./base/variables";
+
+.footer {
+  position: relative;
+  padding: 120px 0;
+  background-color: $secondary-black;
+  @include md {
+    padding: 60px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    @include md {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__logo-link-wrap {
+    position: relative;
+  }
+
+  &__logo-link {
+    position: relative;
+    z-index: 1;
+    font-size: 96px;
+    line-height: 96px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, .25);
+    padding-left: 36px;
+    @include sm {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+
+  &__logo-text {
+    position: absolute;
+    left: 0;
+    top: 39px;
+    color: $white;
+    font-family: 'Adamina', serif;
+    font-size: 96px;
+    line-height: 96px;
+    @include sm {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  margin-top: 68px;
+  @include md {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: $white;
+    font-family: $secondary-family;
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.footer-menu {
+  @include md {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-family: $secondary-family;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-link {
+    color: $white;
+    font-family: $secondary-family;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.1s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

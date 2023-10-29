@@ -1,0 +1,32 @@
+@import "./variables";
+
+.button {
+  width: 100%;
+  max-width: 272px;
+  padding: 14px 70px;
+  background-color: $primary;
+  color: $white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.1s;
+  box-sizing: border-box;
+  font-size: 22px;
+  text-align: center;
+
+  &:hover {
+    background: rgba(163, 50, 11, 0.8);
+  }
+
+  &_small {
+    max-width: 63px;
+    font-size: 14px;
+    padding: 4px 18px;
+  }
+
+  &_middle {
+    max-width: 199px;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 12px 24px;
+  }
+}
